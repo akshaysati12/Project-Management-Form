@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project management form</title>
+    <link rel="stylesheet" href="project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <form id="proform" method="get">
+            <h1>Project Management </h1>
+        <div class="input-box"><br>
+        <label for="projectID">Project ID:</label>
+        <input type="text"  id="proid"placeholder="  Enter your ID" onchange="getEmp()" >
+        <br><br>
+       
+        <label for="project Name">ProjectName:</label>
+        <input type="text" id="proname" placeholder="  Enter Project Name" required >
+        <br><br>
+         
+        <label for="assignedTo">Assigned To:</label>
+        <input type="text" id="assigTo" placeholder="  Enter Assigned No. " required> 
+        <br><br>
+
+        <label for="assignmentDate">Assignment Date:</label>
+        <input type="date" id="assigDate"  required>
+        <br><br>
+        
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline"  required>
+        <br><br>
+        </div>
+        
+        <div class="button">
+            <button type="submit" class="btn btn-lg btn-primary" id="save" onclick="saveData()" disabled>Save</button> 
+            <button type="submit" class="btn btn-lg btn-primary" id="save" onclick="changeData()" >Change</button>           
+            <button type="submit" class="btn btn-lg btn-primary" id="save" onclick="resetForm()" >Reset</button>   
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script type="text/javascript" src="project.js"></script>
+
+</body>
+</html>
